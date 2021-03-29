@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Practice debugging techniques in ServiceNow.</description>
+        <field>active</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>NeedIt Practice Debugging</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+    try {
+        var x = 7;
+        jslogger("This message is from jslog().");
+        jslog("The value of x = " + x);
+        jslog("The NeedIt State value = " + g_form.getValue('state'));
+        jslog("The currently logged in user is " + g_user.getFullName() + ".");
+
+
+        g_form.setValue('short_description', g_form.getValue('short_description') + " -  Updated field value");
+    } catch (err) {
+        jslogger('A JavaScript runtime error occurred: ' + err.message);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-28 04:44:38</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ed2fc86707076010759bf0269c1ed07f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>NeedIt Practice Debugging</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Wish List" source="x_237219_wish_list">59ce8ad007032010759bf0269c1ed0ab</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Wish List">59ce8ad007032010759bf0269c1ed0ab</sys_scope>
+        <sys_update_name>sys_script_client_ed2fc86707076010759bf0269c1ed07f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-28 04:44:38</sys_updated_on>
+        <table>x_237219_wish_list_needit</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
