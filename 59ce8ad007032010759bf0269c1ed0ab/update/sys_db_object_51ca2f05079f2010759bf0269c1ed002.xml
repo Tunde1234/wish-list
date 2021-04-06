@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_object">
     <sys_db_object action="INSERT_OR_UPDATE">
-        <access>public</access>
+        <access>package_private</access>
         <actions_access>false</actions_access>
         <alter_access>false</alter_access>
         <caller_access/>
@@ -16,7 +16,7 @@
         <name>x_237219_wish_list_needit</name>
         <number_ref display_value="NI">e331838b07872010759bf0269c1ed0a5</number_ref>
         <provider_class/>
-        <read_access>true</read_access>
+        <read_access>false</read_access>
         <scriptable_table>false</scriptable_table>
         <super_class display_value="Task" name="task">4c8ca2e4013120100acb3f11fae2b1c1</super_class>
         <sys_class_code/>
@@ -25,16 +25,16 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2021-03-27 04:15:09</sys_created_on>
         <sys_id>51ca2f05079f2010759bf0269c1ed002</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>NeedIt</sys_name>
         <sys_package display_value="Wish List" source="x_237219_wish_list">59ce8ad007032010759bf0269c1ed0ab</sys_package>
         <sys_policy/>
         <sys_scope display_value="Wish List">59ce8ad007032010759bf0269c1ed0ab</sys_scope>
         <sys_update_name>sys_db_object_51ca2f05079f2010759bf0269c1ed002</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-03-27 04:15:11</sys_updated_on>
+        <sys_updated_on>2021-04-06 03:49:02</sys_updated_on>
         <update_access>false</update_access>
         <user_role display_value="x_237219_wish_list.needit_user" name="x_237219_wish_list.needit_user">be310b4b07872010759bf0269c1ed09e</user_role>
-        <ws_access>true</ws_access>
+        <ws_access>false</ws_access>
     </sys_db_object>
 </record_update>
